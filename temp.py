@@ -2,14 +2,14 @@
 
 "Convert temp from celcius to fahrenheit"
 celcius = 25
-convertToFahrenheit = (25* 9/5) + 32
-print(f"{degrees} degrees is equal to {convertToFahrenheit:.0f} fahrenheit")
+convertToFahrenheit = 25* 9/5 + 32
+print(f"{celcius} degrees is equal to {convertToFahrenheit:.0f} fahrenheit")
 
 """Funtion"""
 
 def celcius_to_fahrenheit(celcius):
     """Convert celcius to fahrenheit"""
-    fah = celcius * 9/5 + 32
+    fah = convertToFahrenheit
     return fah
 
 def fahrenheit_to_celcius(fahrenheit):
@@ -18,7 +18,7 @@ def fahrenheit_to_celcius(fahrenheit):
     return celcius
 
 fah = celcius_to_fahrenheit(celcius)
-print(f"{celcius} degrees is {fah} Fahrenheit")
+print(f"{celcius} degrees is {fah:.0f} Fahrenheit")
 
 celcius = fahrenheit_to_celcius(fah)
-print(f"{fah:.0f} Fahrenheit is {celcius} degress ")
+print(f"{fah:.0f} Fahrenheit is {celcius:.0f} degress ")
